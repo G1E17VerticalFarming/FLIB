@@ -15,6 +15,10 @@ public class Log {
     private String cmd;
     private String type;
     private String value;
+    
+    public Log() {
+        
+    }
 
     public void setBlock(int block) {
         this.block = block;

@@ -19,6 +19,10 @@ public class GrowthProfile {
     private int waterLevel;
     private int moisture;
     private ArrayList<Light> lightSequence;
+    
+    public GrowthProfile() {
+        
+    }
 
     public void setName(String name) {
         this.name = name;

@@ -13,6 +13,10 @@ public class Light {
     private int id;
     private int type;
     private int runTimeUnix;
+    
+    public Light() {
+        
+    }
 
     public void setId(int id) {
         this.id = id;
