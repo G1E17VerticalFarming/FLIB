@@ -12,11 +12,7 @@ import java.util.Date;
 
 public class ProductionBlock implements Serializable {
 
-    private int status;
-    private int batchId;
-    private Date estimatedDone;
     private int growthConfigId;
-    private int plantType;
     private String name;
     private String ipaddress;
     private int port;
@@ -116,43 +112,11 @@ public class ProductionBlock implements Serializable {
         this.id = id;
     }
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public int getBatchId() {
-        return batchId;
-    }
-
-    public void setBatchId(int batchId) {
-        this.batchId = batchId;
-    }
-
-    public Date getEstimatedDone() {
-        return estimatedDone;
-    }
-
-    public void setEstimatedDone(Date estimatedDone) {
-        this.estimatedDone = estimatedDone;
-    }
-
     public int getGrowthConfigId() {
         return growthConfigId;
     }
 
     public void setGrowthConfigId(int growthConfigId) {
         this.growthConfigId = growthConfigId;
-    }
-
-    public int getPlantType() {
-        return plantType;
-    }
-
-    public void setPlantType(int plantType) {
-        this.plantType = plantType;
     }
 }
