@@ -13,6 +13,7 @@ public class Light {
     private int id;
     private int type;
     private int runTimeUnix;
+    private int powerLevel;
     
     public Light() {
         
@@ -49,5 +50,4 @@ public class Light {
     public int getPowerLevel() {
         return powerLevel;
     }
-    private int powerLevel;
 }

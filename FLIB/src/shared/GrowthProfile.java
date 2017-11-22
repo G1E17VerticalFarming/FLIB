@@ -5,7 +5,6 @@
  */
 package shared;
 
-import shared.Light;
 import java.util.ArrayList;
 
 /**
@@ -16,12 +15,21 @@ public class GrowthProfile {
     private int id;
     private String name;
     private int temperature;
+    private int nightTemperature;
     private int waterLevel;
     private int moisture;
     private ArrayList<Light> lightSequence;
     
     public GrowthProfile() {
         
+    }
+    
+    public void setNightTemperature(int nightTemperature){
+        this.nightTemperature = nightTemperature;
+    }
+    
+    public int getNightTemperature(){
+        return this.nightTemperature;
     }
 
     public void setName(String name) {
