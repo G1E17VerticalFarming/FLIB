@@ -13,13 +13,13 @@ import javafx.beans.property.*;
  * @author AKT
  */
 public class GrowthProfile {
-    private SimpleIntegerProperty id;
-    private SimpleStringProperty name;
-    private int temperature;
-    private int nightTemperature;
-    private int waterLevel;
-    private int moisture;
-    private ArrayList<Light> lightSequence;
+    private SimpleIntegerProperty id = new SimpleIntegerProperty(0);
+    private SimpleStringProperty name = new SimpleStringProperty("");
+    private int temperature = 0;
+    private int nightTemperature = 0;
+    private int waterLevel = 0;
+    private int moisture = 0;
+    private ArrayList<Light> lightSequence = null;
     
     public GrowthProfile() {
         
