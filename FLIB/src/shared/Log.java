@@ -12,9 +12,10 @@ package shared;
 public class Log {
     private int block;
     private int unixTimestamp;
-    private String cmd;
-    private String type;
-    private String value;
+    private int cmd;
+    private int type;
+    private int value;
+    private int prodId;
     
     public Log() {
         
@@ -24,7 +25,7 @@ public class Log {
         this.block = block;
     }
 
-    public void setType(String type) {
+    public void setType(int type) {
         this.type = type;
     }
 
@@ -32,11 +33,11 @@ public class Log {
         this.unixTimestamp = unixTimestamp;
     }
 
-    public void setCmd(String cmd) {
+    public void setCmd(int cmd) {
         this.cmd = cmd;
     }
 
-    public void setValue(String value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
@@ -44,7 +45,7 @@ public class Log {
         return block;
     }
 
-    public String getType() {
+    public int getType() {
         return type;
     }
 
@@ -52,11 +53,19 @@ public class Log {
         return unixTimestamp;
     }
 
-    public String getCmd() {
+    public int getCmd() {
         return cmd;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
+    }
+
+    public void setProdId(int prodId) {
+        this.prodId = prodId;
+    }
+
+    public int getProdId() {
+        return prodId;
     }
 }
