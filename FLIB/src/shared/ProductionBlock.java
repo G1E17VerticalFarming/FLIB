@@ -18,6 +18,7 @@ public class ProductionBlock implements Serializable {
     private double temp2;
     private int fanspeed;
     private double moisture;
+    private double waterLevel;
     private String eta;
     private String lastOK;
     private String lastCheck;
@@ -141,6 +142,14 @@ public class ProductionBlock implements Serializable {
 
     public void setMoisture(double moisture) {
         this.moisture = moisture;
+    }
+    
+    public double getWaterLevel() {
+        return this.waterLevel;
+    }
+    
+    public void setWaterLevel(double waterLevel) {
+        this.waterLevel = waterLevel;
     }
 
     public String getEta() {
