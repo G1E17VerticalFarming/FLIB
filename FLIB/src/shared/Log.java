@@ -10,22 +10,31 @@ package shared;
  * @author AKT
  */
 public class Log {
+    private int id;
     private int block;
     private int unixTimestamp;
     private int cmd;
-    private int type;
-    private int value;
+    private String type;
+    private String value;
     private int prodId;
     
     public Log() {
         
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setBlock(int block) {
         this.block = block;
     }
 
-    public void setType(int type) {
+    public void setType(String type) {
         this.type = type;
     }
 
@@ -37,7 +46,7 @@ public class Log {
         this.cmd = cmd;
     }
 
-    public void setValue(int value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
@@ -45,7 +54,7 @@ public class Log {
         return block;
     }
 
-    public int getType() {
+    public String getType() {
         return type;
     }
 
@@ -57,7 +66,7 @@ public class Log {
         return cmd;
     }
 
-    public int getValue() {
+    public String getValue() {
         return value;
     }
 
