@@ -6,15 +6,14 @@
 package shared;
 
 import java.util.ArrayList;
-import javafx.beans.property.*;
 
 /**
  *
  * @author AKT
  */
 public class GrowthProfile {
-    private SimpleIntegerProperty id = new SimpleIntegerProperty(0);
-    private SimpleStringProperty name = new SimpleStringProperty("");
+    private int id;
+    private String name;
     private int temperature = 0;
     private int nightTemperature = 0;
     private int waterLevel = 0;
@@ -34,7 +33,7 @@ public class GrowthProfile {
     }
 
     public void setName(String name) {
-        this.name.set(name);
+        this.name = name;
     }
 
     public void setTemperature(int temperature) {
@@ -54,11 +53,11 @@ public class GrowthProfile {
     }
 
     public int getId() {
-        return id.get();
+        return id;
     }
 
     public String getName() {
-        return name.get();
+        return name;
     }
 
     public int getTemperature() {
@@ -70,7 +69,7 @@ public class GrowthProfile {
     }
 
     public void setId(int id) {
-        this.id.set(id);
+        this.id = id;
     }
 
     public int getMoisture() {
@@ -79,5 +78,10 @@ public class GrowthProfile {
 
     public ArrayList<Light> getLightSequence() {
         return lightSequence;
+    }
+    
+    @Override
+    public String toString() {
+        return this.name;
     }
 }
