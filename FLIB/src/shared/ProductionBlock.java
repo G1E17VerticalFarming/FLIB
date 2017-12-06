@@ -9,6 +9,7 @@ public class ProductionBlock implements Serializable {
     private int batchId;
     private Date estimatedDone;
     private int growthConfigId;
+    private int manualGrowthConfigId;
     private int plantType;
     private String name;
     private String ipaddress;
@@ -174,5 +175,13 @@ public class ProductionBlock implements Serializable {
 
     public void setLastCheck(String lastCheck) {
         this.lastCheck = lastCheck;
+    }
+    
+    public int getManualGrowthConfigId() {
+        return this.manualGrowthConfigId;
+    }
+    
+    public void setManualGrowthConfigId(int id) {
+        this.manualGrowthConfigId = id;
     }
 }
