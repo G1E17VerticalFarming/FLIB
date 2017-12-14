@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class ProductionBlock implements Serializable {
 
-    private int status;
+    private String status;
     private int batchId;
     private Date estimatedDone;
     private int growthConfigId;
@@ -73,11 +73,11 @@ public class ProductionBlock implements Serializable {
         this.id = id;
     }
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
